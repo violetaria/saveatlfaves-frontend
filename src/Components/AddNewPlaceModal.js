@@ -69,7 +69,7 @@ export function AddNewPlaceModal(props) {
         }
       });
   }
-  title = `<span>Add a New ${Constants.City} Area Small Business</span>`;
+  const title = `<span>Add a New ${Constants.City} Area Small Business</span>`;
   return (
     <Modal
       title={title}

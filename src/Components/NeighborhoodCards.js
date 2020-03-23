@@ -82,6 +82,7 @@ export class NeighborhoodCards extends React.Component {
     this.setState({ windowWidth: window.innerWidth });
   };
   fetchSuggestionsForNeighborhood(neighborhood, ref, fetchOffset) {
+    if (neighborhood === undefined) return;
     this.setState({ loading: true });
     axios
       .get("/api/places/by_neighborhood", {
