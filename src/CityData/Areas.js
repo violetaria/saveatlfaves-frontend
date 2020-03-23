@@ -1,8 +1,10 @@
 const Areas = {
-  sf: "San Francisco",
-  eastbay: "East Bay",
-  southbay: "South Bay",
-  marin: "Marin"
+  downtown: "Downtown",
+  midtown: "Midtown",
+  buckhead: "Buckhead",
+  east_side: "East Side",
+  west_midtown: "West Midtown",
+  south_side: "South Side"
 };
 
 export default Areas;

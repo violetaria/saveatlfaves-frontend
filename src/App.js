@@ -33,7 +33,7 @@ class App extends React.Component {
     super(props);
     // TODO this is janktown routing
     const path = window.location.pathname.slice(1).toLowerCase();
-    const currentArea = Areas[path] ? path : "sf";
+    const currentArea = Areas[path] ? path : "midtown";
 
     this.state = {
       faqVisible: false,
@@ -128,7 +128,7 @@ class App extends React.Component {
                     level={1}
                     style={{ color: "white", textAlign: "center" }}
                   >
-                    Your favorite Bay Area restaurant might close forever. Help
+                    Your favorite Atlanta restaurant might close forever. Help
                     save it.
                   </Title>
                   <div className="header-sans">

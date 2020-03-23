@@ -1,8 +1,9 @@
 import React from "react";
-import SFPlaces from "../CityData/Places";
+import AtlPlaces from "../CityData/Places";
 import Autosuggest from "react-autosuggest";
 import { LogEngagementEvent } from "../Logging";
 import { AddNewPlaceModal } from "./AddNewPlaceModal";
+import Constants from "../Constants";
 
 export class PlaceAutosuggestion extends React.Component {
   maxSuggestions = 8;
@@ -27,7 +28,7 @@ export class PlaceAutosuggestion extends React.Component {
     if (inputLength < 3) {
       return [];
     } else {
-      const results = SFPlaces.filter(
+      const results = AtlPlaces.filter(
         place => this.sanitizeInput(place.name).indexOf(inputValue) !== -1
       ).slice(0, this.maxSuggestions);
       if (results.length === 0) {
@@ -90,7 +91,7 @@ export class PlaceAutosuggestion extends React.Component {
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
-      placeholder: "‍Search for a Bay Area restaurant, coffee...",
+      placeholder: `Search for an ${Constants.City} restaurant, coffee, brewery...`,
       value,
       onChange: this.onChange,
       onFocus: event => {

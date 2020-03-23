@@ -43,14 +43,13 @@ function FAQModal(props) {
 
   const consumerFAQs = [
     {
-      title: "What is SaveOurFaves?",
-      body:
-        "SaveOurFaves is a directory of Bay Area restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town."
+      title: "What is SaveATLFaves?",
+      body: `SaveATLFaves is a directory of ${Constants.City} restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town.`
     },
     {
       title: "Why isn’t my favorite business on your site?",
       body:
-        "Please help us add your fave Bay Area food & beverages spots " +
+        `Please help us add your fave ${Constants.City} food & beverages spots ` +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },
@@ -61,13 +60,15 @@ function FAQModal(props) {
         "Delivery and pickup are great options! Some restaurants that don’t normally offer delivery have started to offer curbside pickup during the pandemic so check their websites and social media to see what’s available. <br />" +
         "Tip generously if you can (even for delivery/pickup), since employees are doing extra work and putting their health at risk. <br />" +
         "Encourage the government to get involved. Sign this " +
-        renderLink("http://chng.it/jM97Sbf9ct", "San Francisco petition") +
+        renderLink("http://chng.it/jM97Sbf9ct", `${Constants.City} petition`) +
         " to encourage lawmakers to offer emergency small business loans. Please call your US Representative and your Senators. You can be connected to the capitol switchboard at 202-224-3121. Demand that small businesses are part the federal stimulus plan."
     },
     {
-      title: "Why is this just for the Bay Area? Can you do this for my city?",
+      title: `Why is this just for the ${Constants.City}? Can you do this for my city?`,
       body:
-        "As San Francisco natives, we started this project for our community. Over the past days, people have launched similar tools for their specific cities, or even nationally. Check out " +
+        `As ${Constants.City} natives, we started this project for our community. Over the past days, people have launched similar tools for their specific cities, or even nationally. Check out ` +
+        renderLink("https://thegivingkichen.org/", "The Giving Kitchen") +
+        ", " +
         renderLink("https://helpmainstreet.com/", "Help Main Street") +
         ", " +
         renderLink("https://givelocal.co/", "GiveLocal") +
@@ -81,7 +82,7 @@ function FAQModal(props) {
     {
       title: "Who built this? And why?",
       body:
-        "We’re Kaitlyn & Mike Krieger -- a husband and wife duo in San Francisco. We’re no longer going out because of COVID-19 (San Francisco is under a “shelter in place” ordinance), so we started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time. SaveOurFaves is our simple way to make it easier for people to help local businesses through this difficult time. We got help and advice from some great friends and local business owners, in particular Phil Levin, Zack Schwab, Kristen Berman, Stefanie Krieger, Melissa Dyrdahl, Laura Buhler, and Paul Einbund. You can contact us with any questions about the site at " +
+        "I'm Terri Chu and I adapted this site from the one originally created for San Francisco for Kaitlyn & Mike Krieger -- a husband and wife duo in San Francisco. We’re no longer going out because of COVID-19 (San Francisco is under a “shelter in place” ordinance), so we started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time. SaveOurFaves is our simple way to make it easier for people to help local businesses through this difficult time. We got help and advice from some great friends and local business owners, in particular Phil Levin, Zack Schwab, Kristen Berman, Stefanie Krieger, Melissa Dyrdahl, Laura Buhler, and Paul Einbund. You can contact us with any questions about the site at " +
         renderLink("mailto:info@saveourfaves.org", "info@saveourfaves.org") +
         " and see more about why we decided to start it " +
         renderLink(
@@ -95,7 +96,7 @@ function FAQModal(props) {
     {
       title: "Why isn’t my business showing up in your search results?",
       body:
-        "Please help us add your Bay Area food/beverage business " +
+        `Please help us add your ${Constants.City} food/beverage business ` +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },

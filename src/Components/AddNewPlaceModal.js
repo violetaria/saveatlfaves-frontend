@@ -5,6 +5,8 @@ import { LogEngagementEvent } from "../Logging";
 import Config from "../Config";
 import useScript from "../lib/useScript";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
+import Constants from "../Constants";
+
 // If you want to use the provided css
 // import 'react-google-places-autocomplete/dist/assets/index.css';
 
@@ -67,9 +69,10 @@ export function AddNewPlaceModal(props) {
         }
       });
   }
+  title = `<span>Add a New ${Constants.City} Area Small Business</span>`;
   return (
     <Modal
-      title={<span>Add a New Bay Area Small Business</span>}
+      title={title}
       visible={props.shouldShow}
       onOk={args => {
         counter === 0 ? handleLinkSubmission() : resetAndClose();
