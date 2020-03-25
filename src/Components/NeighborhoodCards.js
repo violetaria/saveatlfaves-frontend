@@ -47,8 +47,6 @@ export class NeighborhoodCards extends React.Component {
         [array[i], array[j]] = [array[j], array[i]];
       }
     }
-    console.log("Area = " + area);
-    console.log("Neighborhoods = " + Neighborhoods[area]);
     const neighborhoods = Neighborhoods[area];
     const firstBatch = neighborhoods.slice(0, 6);
     const rest = neighborhoods.slice(6);
