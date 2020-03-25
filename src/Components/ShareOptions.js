@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "antd";
 import { FacebookProvider, Share } from "react-facebook";
-import Constants from "../Constants";
 
 export class ShareOptions extends React.Component {
   shareToFB() {}

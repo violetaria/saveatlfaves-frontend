@@ -1,9 +1,9 @@
 const Areas = {
-  downtown: "Downtown",
-  midtown: "Midtown",
   buckhead: "Buckhead",
-  east_side: "East Side",
+  midtown: "Midtown",
   west_midtown: "West Midtown",
+  downtown: "Downtown",
+  east_side: "East Side",
   south_side: "South Side"
 };
 

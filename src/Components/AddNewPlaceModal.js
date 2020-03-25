@@ -69,10 +69,9 @@ export function AddNewPlaceModal(props) {
         }
       });
   }
-  const title = `<span>Add a New ${Constants.City} Area Small Business</span>`;
   return (
     <Modal
-      title={title}
+      title={<span>Add a New {Constants.City} Area Small Business</span>}
       visible={props.shouldShow}
       onOk={args => {
         counter === 0 ? handleLinkSubmission() : resetAndClose();
