@@ -9,7 +9,6 @@
     "antd": "^4.0.2",
     "axios": "^0.19.2",
     "drag-scroll-provider": "^1.0.6",
-    "http-proxy-middleware": "^1.0.3",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "node-sass": "^4.13.1",
@@ -55,7 +54,7 @@
     "@storybook/react": "^5.3.17",
     "eslint-plugin-import": "^2.20.1"
   },
-  "proxy": "https://save-atl-faves-api.herokuapp.com:8000",
+  "proxy": "http://localhost:8000",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
