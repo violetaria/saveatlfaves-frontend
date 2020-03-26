@@ -91,7 +91,7 @@ class App extends React.Component {
                 <Row className="top-header">
                   <Col span={24} offset={0}>
                     <Title style={{ float: "left", color: "white" }} level={4}>
-                      SaveOurFaves
+                      SaveATLFaves
                     </Title>
                     <div style={{ float: "right" }}>
                       <a href="#">
