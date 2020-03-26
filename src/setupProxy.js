@@ -2,8 +2,10 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = function(app) {
   app.use(
-    createProxyMiddleware(["/api"], {
-      target: "https://save-atl-faves-api.herokuapp.com"
+    "/api",
+    createProxyMiddleware({
+      target: "https://api.saveatlfaves.org",
+      changeOrigin: true
     })
   );
 };
