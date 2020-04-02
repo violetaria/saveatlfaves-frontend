@@ -152,15 +152,13 @@ class App extends React.Component {
                   lg={{ span: 20, offset: 2 }}
                 >
                   <div className="main-results">
-                    <div style={{ padding: 20 }}>
-                      <AreaContext.Consumer>
-                        {value => {
-                          return (
-                            <PlaceFilterDisplay updateArea={value.updateArea} />
-                          );
-                        }}
-                      </AreaContext.Consumer>
-                    </div>
+                    <AreaContext.Consumer>
+                      {value => {
+                        return (
+                          <PlaceFilterDisplay updateArea={value.updateArea} />
+                        );
+                      }}
+                    </AreaContext.Consumer>
                     <div className="neighborhood-card-container-outer">
                       <AreaContext.Consumer>
                         {value => {

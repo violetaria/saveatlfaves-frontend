@@ -70,7 +70,7 @@ h4 {
   border-style: solid;
   border-width: 1px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-bottom: 20px;
+  padding: 1.33em 0;
   overscroll-behavior: none;
 }
 
@@ -369,11 +369,11 @@ div.header-sans {
 }
 
 .neighborhood-card-container {
-  height: 130px;
   overflow-x: hidden;
   overflow-y: hidden;
   overscroll-behavior: none;
   margin: 0 auto;
+  margin-bottom: 12px;
   position: relative;
   white-space: nowrap;
   display: flex;
@@ -393,11 +393,11 @@ div.header-sans {
 
 .neighborhood-card {
   width: 120px;
-  min-height: 140px;
+  min-height: 100%;
   margin-right: 8px;
   margin-bottom: 10px;
   margin-top: 4px;
-  display: block;
+  display: inline-block;
 }
 
 .neighborhood-card-arrow {
@@ -415,7 +415,7 @@ div.header-sans {
     rgba(255, 255, 255, 1) 65%
   );
   font-size: 2.5em;
-  padding-top: 36px;
+  padding-top: 0.25em;
 }
 
 .neighborhood-card-arrow-right {
@@ -463,13 +463,14 @@ div.header-sans {
 }
 
 .neighborhood-card-image {
-  margin-bottom: 12px;
   width: 120px;
-  height: 120px;
-  border-radius: 80px;
+  min-height: 70px;
+  height: 100%;
+  border-radius: 3%;
   background-position: center center;
   background-color: $tertiary-color;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   padding: 12px;
@@ -478,19 +479,21 @@ div.header-sans {
 .neighborhood-card-image-selected {
   background-color: $primary-color;
   color: white;
-  box-shadow: 0 0 4px darkslategray;
 }
 
 .neighborhood-card-image:hover {
   cursor: pointer;
-  box-shadow: 0 0 4px darkslategray;
+  box-shadow: 0 0 8px $primary-color;
 }
 
 .neighborhood-card-title {
+  margin-top: -0.25em;
   font-family: "roboto slab", serif;
   font-size: 1.1em;
-  text-overflow: ellipsis;
+  line-height: 1.3em;
   white-space: pre-wrap;
+  word-break: break-word;
+  text-overflow: ellipsis;
   color: $primary-color;
 }
 
