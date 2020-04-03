@@ -141,7 +141,7 @@ export class NeighborhoodCards extends React.Component {
                 this.fetchSuggestionsForNeighborhood(neighborhood, this, 0);
               }}
             >
-              <div
+              <span
                 className={
                   "neighborhood-card-title" +
                   (this.state.selectedNeighborhood &&
@@ -151,7 +151,7 @@ export class NeighborhoodCards extends React.Component {
                 }
               >
                 {neighborhood.name}
-              </div>
+              </span>
             </div>
           </div>
         );
